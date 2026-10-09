@@ -1,0 +1,134 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculate Fees | Next Level Gaming</title>
+</head>
+<body>
+    <header>
+        <h2>NEXT LEVEL</h2>
+        <nav>
+            <a href="index.html">Home</a> |
+            <a href="about.html">About Us</a> |
+            <a href="packages.html">Gaming Packages</a> |
+            <a href="experiences.html">Individual Experiences</a> |
+            <a href="fees.html">Calculate Fees</a> |
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1>CALCULATE TOTAL FEES</h1>
+        <P>RACE TO YOUR QUOTE</P>
+        <p>Follow the track, select your packages and experiences, enter your details and get your total quoted fee.</p>
+
+        <form action="#" method="post">
+
+            <fieldset>
+                <legend>1 Personal Details</legend>
+
+                <p>
+                    <label for="full-name">Full name</label><br>
+                    <input type="text" id="full-name" name="full-name" required>
+                </p>
+
+                <p>
+                    <label for="phone">Phone number</label><br>
+                    <input type="tel" id="phone" name="phone" required>
+                </p>
+
+                <p>
+                    <label for="email">Email address</label><br>
+                    <input type="email" id="email" name="email" required>
+                </p>
+
+                <p>
+                    <label for="booking-type">Booking type</label><br>
+                    <select id="booking-type" name="booking-type" required>
+                        <option value="">Select booking type</option>
+                        <option value="individual">Individual</option>
+                        <option value="family">Family</option>
+                        <option value="school">School</option>
+                        <option value="gaming-club">Gaming club</option>
+                        <option value="business">Business or corporate</option>
+                        <option value="other">Other group</option>
+                    </select>
+                </p>
+
+                <p>
+                    <input type="checkbox" id="consultant" name="consultant" value="yes">
+                    <label for="consultant">I would like a consultant to contact me.</label>
+                </p>
+            </fieldset>
+
+            <fieldset>
+                <legend>2 Select Course</legend>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <th scope="col">Select</th>
+                            <th scope="col">Offering</th>
+                            <th scope="col">Fee</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><input type="checkbox" id="ultimate" name="offerings" value="ultimate"></td>
+                            <td><label for="ultimate">Ultimate Gamer Pass</label></td>
+                            <td>R 1,500</td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" id="vip" name="offerings" value="vip"></td>
+                            <td><label for="vip">VIP Gaming Experience</label></td>
+                            <td>R 1,500</td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" id="esports" name="offerings" value="esports"></td>
+                            <td><label for="esports">Esports Training Package</label></td>
+                            <td>R 1,500</td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" id="birthday" name="offerings" value="birthday"></td>
+                            <td><label for="birthday">Birthday Party Package</label></td>
+                            <td>R 1,500</td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" id="vr" name="offerings" value="vr"></td>
+                            <td><label for="vr">Virtual Reality Experience</label></td>
+                            <td>R 750</td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" id="racing" name="offerings" value="racing"></td>
+                            <td><label for="racing">Racing Simulator Challenge</label></td>
+                            <td>R 750</td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" id="escape" name="offerings" value="escape"></td>
+                            <td><label for="escape">Escape Room Challenge</label></td>
+                            <td>R 750</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </fieldset>
+
+            <fieldset>
+                <legend>3 Total Quote</legend>
+
+                <p>Subtotal: <output>To be calculated</output></p>
+                <p>Booking discount: <output>To be calculated</output></p>
+                <p>VAT (15%): <output>To be calculated</output></p>
+                <p><strong>Estimated total: <output>To be calculated</output></strong></p>
+
+                <button type="submit">SUBMIT REQUEST</button>
+            </fieldset>
+        </form>
+    </main>
+
+    <footer>
+        <p>Next Level Gaming &amp; Esports Arena</p>
+    </footer>
+</body>
+</html>
